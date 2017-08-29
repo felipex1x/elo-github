@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="elotechApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Elotech - GitHub</title>
+
+    <link href="content/css/global.css" rel="stylesheet"/>
+    <link href="content/css/margins.css" rel="stylesheet"/>
+    <link href="content/css/lib-override.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="icon"
+          href="https://www.elotech.com.br/site/wp-content/uploads/2017/01/cropped-login-orange-elotech-1-32x32.png"
+          type="image/x-icon">
+</head>
+<body>
+
+<div ui-view></div>
+
+
+<!-- Libs externas -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+<!-- Meus JS's-->
+<script src="app/app.module.js"></script>
+<script src="app/app.state.js"></script>
+<!-- Home-->
+<script src="app/pages/home/home.controller.js"></script>
+<script src="app/pages/home/home.service.js"></script>
+<script src="app/pages/home/home.state.js"></script>
+<!-- Pagination Service -->
+<script src="app/pages/home/pagination-util.service.js"></script>
+<!-- Detalhes Repositório -->
+<script src="app/pages/detalhe-repositorio/detalhe-repositorio.controller.js"></script>
+<script src="app/pages/detalhe-repositorio/detalhe-repositorio.service.js"></script>
+<script src="app/pages/detalhe-repositorio/detalhe-repositorio.state.js"></script>
+</body>
+</html>

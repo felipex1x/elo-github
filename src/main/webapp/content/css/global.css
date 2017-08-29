@@ -1,0 +1,38 @@
+body {
+    font-size: 12px !important;
+    background-color: #ddd !important;
+}
+
+.botao-pesquisar {
+    margin-left: -1px;
+}
+
+.div-center {
+    margin: 0 auto;
+}
+
+.container-fluid .form-group{
+    margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .imagem-detalhes.img-thumbnail{
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .text-md-center {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-xl-left{
+        text-align: left;
+    }
+}
+
+.div-paginacao-home{
+    display: flex;
+    justify-content: center;
+}

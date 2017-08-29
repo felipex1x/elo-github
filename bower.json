@@ -1,0 +1,15 @@
+{
+  "name": "elotech-github",
+  "version": "0.0.0",
+  "description": "Somente Libs de testes aqui",
+  "main": "",
+  "moduleType": [],
+  "private": true,
+  "appPath": "src/main/webapp/",
+  "dependencies": {
+    "angular-mocks": "^1.6.6",
+    "angular-ui-router": "1.0.3",
+    "angular-resource": "1.6.6",
+    "angular-bootstrap": "2.2.0"
+  }
+}

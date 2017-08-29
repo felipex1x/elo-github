@@ -1,0 +1,30 @@
+/*TOP*/
+.mtop10 {
+    margin-top: 10px;
+}
+
+.mtop15 {
+    margin-top: 15px;
+}
+
+.mtop20 {
+    margin-top: 20px;
+}
+
+/*RIGHT*/
+.mrig05{
+    margin-right: 05px;
+}
+
+.mrig10{
+    margin-right: 10px;
+}
+
+/*BOTTOM*/
+.mbot10{
+    margin-bottom: 10px;
+}
+
+.mbot20{
+    margin-bottom: 20px;
+}

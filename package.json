@@ -1,0 +1,24 @@
+{
+  "name": "elotech-github",
+  "version": "0.0.0",
+  "description": "Somente Libs de testes aqui",
+  "private": true,
+  "cacheDirectories": [
+    "node_modules",
+    "src/main/webapp/bower_components"
+  ],
+  "devDependencies": {
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4"
+  },
+  "engines": {
+    "node": "^4.3"
+  },
+  "scripts": {
+    "postinstall": "webdriver-manager update"
+  },
+  "dependencies": {
+    "jasmine": "^2.8.0",
+    "karma": "^1.7.0"
+  }
+}

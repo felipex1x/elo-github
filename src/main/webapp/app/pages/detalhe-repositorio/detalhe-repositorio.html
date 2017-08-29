@@ -1,0 +1,95 @@
+<div class="row mtop10">
+    <div class="col-sm-12 col-md-10 col-lg-8 col-xl-8 div-center">
+        <div class="text-center div-center" ng-show="vm.carregando">
+            <img src="../../../content/imagens/eclipse.gif" width="50"/><br/>
+            Recuperando o repositório solicitado...
+        </div>
+
+        <div class="card mtop15 mbot20" ng-if="vm.repositorio != null">
+            <div class="card-block">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 text-md-center">
+                            <a href="https://github.com/{{vm.repositorio.owner.login}}" target="_blank">
+                                <img ng-src="{{vm.repositorio.owner.avatar_url}}"
+                                     class="imagem-detalhes img-thumbnail"/>
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="https://github.com/{{vm.repositorio.owner.login}}/{{vm.repositorio.name}}"
+                               target="_blank">
+                                <h5 class="card-title">{{vm.repositorio.full_name}}</h5>
+                            </a>
+
+                            <div class="form-group no-margins">
+                                <label>Privado?</label>
+                                <span>{{vm.repositorio.private |  simOuNao}}</span>
+                            </div>
+
+                            <div class="form-group no-margins">
+                                <label>Data de Criação:</label>
+                                <span>{{vm.repositorio.created_at | date:'dd/MM/yyyy'}}</span>
+                            </div>
+
+                            <hr class="mtop10 mbot10"/>
+
+                            <div class="form-group no-margins">
+                                <label>Estrelas:</label>
+                                <span>{{vm.repositorio.stargazers_count}}</span>
+                                <a href="https://github.com/{{vm.repositorio.full_name}}/stargazers" target="_blank"><i
+                                        class="fa fa-star" aria-hidden="true"></i></a>
+                            </div>
+
+                            <div class="form-group no-margins">
+                                <label>Issues:</label>
+                                <span>{{vm.repositorio.open_issues}}</span>
+                                <a href="https://github.com/{{vm.repositorio.full_name}}/issues" target="_blank"><i
+                                        class="fa fa-question-circle" aria-hidden="true"></i></a>
+                            </div>
+
+                            <div class="form-group no-margins">
+                                <label>Observadores:</label>
+                                <span>{{vm.repositorio.watchers}}</span>
+                                <a href="https://github.com/{{vm.repositorio.full_name}}/watchers" target="_blank"><i
+                                        class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+
+                            <div class="form-group no-margins">
+                                <label>Linguagem Utilizada:</label>
+                                <span>{{vm.repositorio.language}}</span>
+                            </div>
+
+                            <hr class="no-margins"/>
+
+                            <p class="card-text">{{vm.repositorio.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <button type="button"
+                        ng-click="vm.voltarParaPaginaAnterior()"
+                        title="Detalhes"
+                        class="btn btn-warning pull-right btn-xs">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    Voltar
+                </button>
+            </div>
+        </div>
+
+        <div class="alert alert-warning text-center" ng-if="vm.repositorio == null && !vm.carregando">
+            O repositório que vc informou não pôde ser localizado.<br/>
+            Verifique se você informou um valor válido para a busca.<br/>
+
+
+            <button type="button"
+                    ng-click="vm.voltarParaPaginaAnterior()"
+                    title="Detalhes"
+                    class="btn btn-warning btn-xs mtop10">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Voltar
+            </button>
+
+        </div>
+    </div>
+</div>
